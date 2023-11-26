@@ -247,7 +247,7 @@
     transform: translateX(-50%);
     transition: 1s;
 }
-hr{
+.single-service hr{
     background: #fff;
     height: 2px;
     border: 0;
@@ -269,7 +269,7 @@ hr{
     .service-desc p{
         font-size: 12px;
     }
-    hr{
+    .single-service hr{
         margin: 5px auto;
     }
     .single-service:hover .service-desc{
@@ -277,5 +277,125 @@ hr{
         opacity: 1;
     }
     
+}
+
+.testimonials{
+  width: 100%;
+  padding: 30px 0;
+}
+.testimonials-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.testimonials-container .box{
+  width: 400px;
+  height: 200px;
+  flex-basis: 27%;
+  border: 1px solid #efefef;
+  box-shadow: 0 10px 20px 3px #00968814;
+  cursor: pointer;
+  transition: .25s;
+}
+.testimonials-container .box .username{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.username img{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.username .text{
+  display: flex;
+  flex-direction: column;
+  color: #009688;
+}
+.username i{
+  color: #009688;
+  font-weight: bold;
+}
+.test{
+  padding: 0 20px;
+  font-size: 14px;
+
+}
+.testimonials-container .box:hover{
+  transform: translateY(-8px);
+}
+@media screen and (max-width:770px) {
+  .testimonials-container .box{
+    flex-basis: 100%;
+  }
+  
+}
+.footer{
+  background: #efefef;
+  padding: 30px 0;
+  position: relative;
+}
+.footer-row{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-right,.footer-left{
+  flex-basis: 45%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer-right{
+  text-align: right;
+}
+.footer-row h2{
+  margin-bottom: 20px;
+}
+.footer-row i{
+  color: #009688;
+  padding: 0 10px;
+}
+.footer-row p{
+  line-height: 2;
+}
+.footer-img{
+  position: absolute;
+  max-width: 280px;
+  left: 50%;
+  top: 35%;
+  opacity: .2;
+  transform: translate(-50%,-50%);
+}
+.social{
+  text-align: center;
+  color: #009688;
+ 
+}
+.social i{
+  border: 1px solid #009688;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 20px 5px 0;
+  transition: .25s;
+}
+.social i:hover{
+  background: #009688;
+  color: #fff;
+  transform: translateY(-8px);
+}
+.social p i{
+  color: red;
+  border: none;
+}
+@media screen and (max-width:770px) {
+  .footer-left,.footer-right{
+    flex-basis: 100%;
+    font-size: 14px;
+  }
 }
 
